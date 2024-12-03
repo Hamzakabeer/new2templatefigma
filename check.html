@@ -3,165 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recent Projects</title>
+    <title>Responsive Real Estate Page</title>
     <style>
         body {
-            margin: 0;
             font-family: Arial, sans-serif;
-            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .container3 {
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             padding: 20px;
         }
 
-        .header3 {
-            text-align: center;
+        .header {
+            font-size: 2em;
+            font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .header h1 {
-            font-size: 2rem;
-            margin: 0;
-        }
-
-        .projects-slider {
+        .content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            overflow-x: auto;
-            gap: 20px;
-            padding: 10px 0;
-            scroll-behavior: smooth;
-        }
-
-        .project-card {
-            min-width: 300px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            flex: 0 0 auto;
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .project-card .card-content {
-            padding: 15px;
-        }
-
-        .project-card h3 {
-            font-size: 1.2rem;
-            margin: 0 0 10px;
-        }
-
-        .project-card p {
-            font-size: 0.9rem;
-            color: gray;
-            margin: 0 0 15px;
-        }
-
-        .project-card .rating {
-            display: flex;
             align-items: center;
-            gap: 5px;
-            font-size: 0.9rem;
+            gap: 20px;
         }
 
-        .rating img {
-            width: 20px;
-            height: 20px;
+        .text-section {
+            flex: 1 1 300px;
+            max-width: 500px;
         }
 
-        @media (max-width: 768px) {
-            .project-card {
-                min-width: 250px;
-            }
-
-            .project-card img {
-                height: 150px;
-            }
+        .text-section h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
         }
 
-        .navigation {
-            text-align: center;
+        .text-section p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .button-container {
             margin-top: 20px;
         }
 
-        .navigation button {
+        .button-container button {
             padding: 10px 20px;
-            margin: 0 5px;
+            margin: 0 10px;
             border: none;
-            background-color: black;
-            color: white;
             border-radius: 5px;
             cursor: pointer;
         }
 
-        .navigation button:disabled {
-            background-color: gray;
-            cursor: not-allowed;
+        .button-container .btn-primary {
+            background-color: #000;
+            color: #fff;
+        }
+
+        .button-container .btn-secondary {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+
+        .image-section {
+            flex: 1 1 300px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .image-section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .stats .stat {
+            text-align: center;
+        }
+
+        .stats .stat h3 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .stats .stat p {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0 0;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .stats {
+                flex-direction: column;
+                gap: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container3">
-        <div class="header3">
-            <h1>Our recent projects</h1>
+    <div class="container">
+        <div class="header">
+            We are a global, boutique real estate brokerage
         </div>
-
-        <div class="projects-slider" id="slider">
-            <div class="project-card">
-                <img src="" alt="Project Image">
-                <div class="card-content">
-                    <h3>Sobha Hearland II Villas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
-                    <div class="rating">
-                        <img src="" alt="Star Icon">
-                        <span>4.83</span>
-                    </div>
+        <div class="content">
+            <div class="text-section">
+                <h2>The transfer of real estate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Feugiat ut aliquet sit pellentesque sollicitudin. Egestas faucibus lacus diam in senectus consectetur. Mattis elit adipiscing quisque tellus scelerisque vehicula ante nunc.</p>
+                <div class="button-container">
+                    <button class="btn-primary">Book Now!</button>
+                    <button class="btn-secondary">Read More</button>
                 </div>
             </div>
-            <div class="project-card">
-                <img src="" alt="Project Image">
-                <div class="card-content">
-                    <h3>Sobha Hearland II Villas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
-                    <div class="rating">
-                        <img src="" alt="Star Icon">
-                        <span>4.83</span>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="" alt="Project Image">
-                <div class="card-content">
-                    <h3>Sobha Hearland II Villas</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
-                    <div class="rating">
-                        <img src="" alt="Star Icon">
-                        <span>4.83</span>
-                    </div>
-                </div>
+            <div class="image-section">
+                <img src="" alt="Placeholder Image">
             </div>
         </div>
-
-        <div class="navigation">
-            <button onclick="scrollSlider(-1)" id="prev">&#8249;</button>
-            <button onclick="scrollSlider(1)" id="next">&#8250;</button>
+        <div class="stats">
+            <div class="stat">
+                <h3>12+</h3>
+                <p>Customers</p>
+            </div>
+            <div class="stat">
+                <h3>14+</h3>
+                <p>Offices</p>
+            </div>
+            <div class="stat">
+                <h3>10+</h3>
+                <p>Students</p>
+            </div>
         </div>
     </div>
-
-    <script>
-        const slider = document.getElementById('slider');
-
-        function scrollSlider(direction) {
-            const scrollAmount = 300; // Adjust as needed
-            slider.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-        }
-    </script>
 </body>
 </html>
