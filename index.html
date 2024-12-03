@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Responsive Header with Dropdown</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/image/build.jpg" alt="Logo" >
+      BUILD
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Listings</a></li>
+        <li><a href="#">Other Services</a></li>
+      </ul>
+      <ul class="dropdown">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Listings</a></li>
+        <li><a href="#">Other Services</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="contact-button">Contact Us</a>
+    <span class="menu-icon" onclick="toggleMenu()">☰</span>
+  </header>
+ 
+<!-- Card Section -->
+<section class="card-container">
+  <div class="card-content">
+    <h2>Modern House</h2>
+    <p>This modern house is designed with state-of-the-art facilities and is located in a prime location with access to supermarkets, schools, and public transport.</p>
+    <form class="card-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Get a Quote</button>
+    </form>
+  </div>
+  <img src="assets/image/house.svg" alt="House Image"> <!-- Replace with your image path -->
+</section>
+
+<div class="container2">
+  <div class="header">
+      <p>Three steps. Three minutes.</p>
+      <h1>Everything should be this easy.</h1>
+  </div>
+
+  <div class="steps">
+      <div class="step">
+          <img src="assets/image/messages.svg" alt="Icon Placeholder">
+          <h3>Answer questions</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in vestibulum.</p>
+      </div>
+      <div class="step">
+          <img src="assets/image/sms-tracking.svg" alt="Icon Placeholder">
+          <h3>Select a quote</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in vestibulum.</p>
+      </div>
+      <div class="step">
+          <img src="assets/image/edit-2.svg" alt="Icon Placeholder">
+          <h3>Get registered</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum in vestibulum.</p>
+      </div>
+  </div>
+
+  <div class="footer2">
+      <p>Best Project of the Years</p>
+  </div>
+</div>
+<div class="container3">
+  <div class="header3">
+      <h1>Our recent projects</h1>
+  </div>
+
+  <div class="projects-slider" id="slider">
+      <div class="project-card">
+          <img src="assets/image/1bg.svg" alt="Project Image">
+          <div class="card-content">
+              <h3>Sobha Hearland II Villas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/Star.svg" alt="Star Icon">
+                  <span>4.83</span>
+              </div>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="assets/image/1bg.svg" alt="Project Image">
+          <div class="card-content">
+              <h3>Sobha Hearland II Villas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/Star.svg" alt="Star Icon">
+                  <span>4.83</span>
+              </div>
+          </div>
+      </div>
+      <div class="project-card">
+          <img src="assets/image/1bg.svg" alt="Project Image">
+          <div class="card-content">
+              <h3>Sobha Hearland II Villas</h3>
+              <p>Lorem ipsum dolor sit amet consectetur. Adipiscing imperdiet bibendum.</p>
+              <div class="rating">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/big.svg" alt="Star Icon">
+                  <img src="assets/image/Star.svg" alt="Star Icon">
+                  <span>4.83</span>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="navigation">
+      <button onclick="scrollSlider(-1)" id="prev">&#8249;</button>
+      <button onclick="scrollSlider(1)" id="next">&#8250;</button>
+  </div>
+</div>
+
+
+
+
+  <script src="myscripts.js"></script>
+</body>
+
+</html>
